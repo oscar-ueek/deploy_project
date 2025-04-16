@@ -23,7 +23,7 @@ jobs:
       - checkout
       - flutter/install_sdk_and_pub:
           channel: stable
-          verson: 3.29.0
+          version: 3.29.0
       - flutter/install_android_gradle_dependencies
       - run: flutter pub get
       - run: flutter build apk
@@ -31,7 +31,7 @@ jobs:
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
 workflows:
-  say-hello-workflow: # This is the name of the workflow, feel free to change it to better match your workflow.
+  build: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
     jobs:
       - build
