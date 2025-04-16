@@ -3,6 +3,7 @@
 version: 2.1
 
 orbs:
+  android: circleci/android@1.0.3
   flutter: circleci/flutter@2.1.0
 
 # Define a job to be invoked later in a workflow.
