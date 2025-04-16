@@ -23,7 +23,6 @@ jobs:
       - checkout
       - flutter/install_sdk_and_pub:
           channel: stable
-          version: 3.4.0
       - flutter/install_android_gradle_dependencies
       - run: flutter pub get
       - run: flutter build apk
